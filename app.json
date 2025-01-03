@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "travel-management-app",
+    "slug": "travel-management-app",
+    "version": "1.0.0",
+    "plugins": [
+      [
+        "react-native-fbsdk-next",
+        {
+          "appID": "285979571230564",
+          "clientToken": "cc71fdc07ed929a9809f6bd5ef415440",
+          "displayName": "travel_app"
+        }
+      ]
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need your location to show relevant content.",
+        "NSLocationAlwaysUsageDescription": "We need your location even when the app is in the background."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.anonymous.travelmanagementapp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fdd11573-bb34-44ab-8c67-c955c4107d37"
+      }
+    }
+  }
+}
