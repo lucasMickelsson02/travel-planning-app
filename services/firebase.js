@@ -5,14 +5,14 @@ import { getFirestore, initializeFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 // My web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyBtezQEDW5hhnAuBUVcV32kDDhSk3RH-Ys",
-  authDomain: "travel-app-4645f.firebaseapp.com",
-  projectId: "travel-app-4645f",
-  storageBucket: "travel-app-4645f.appspot.com",
-  messagingSenderId: "257457818850",
-  appId: "1:257457818850:web:fea433d9f991fefcaba2bb",
-  measurementId: "G-MEWKJ8NBET",
+export const firebaseConfig = {
+  apiKey: FIREBASE_API_KEY,
+  authDomain: FIREBASE_AUTH_DOMAIN,
+  projectId: FIREBASE_PROJECT_ID,
+  storageBucket: FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: FIREBASE_MESSAGING_SENDER_ID,
+  appId: FIREBASE_APP_ID,
+  measurementId: FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
@@ -30,7 +30,7 @@ const auth = initializeAuth(app, {
 });
 //const db = initializeFirestore(app, "traveldata");
 const db = initializeFirestore(app, getFirestore, "traveldata");
-const storage = getStorage(app, "gs://travel-app-4645f.appspot.com");
+const storage = getStorage(app, "BUCKET_NAME");
 //console.log(storage);
 
 export { app, auth, db, storage };
